@@ -4,8 +4,9 @@ import Home from '../screens/Home'
 import Search from '../screens/Search'
 import Favorite from '../screens/Favorite'
 import MovieDetail from '../screens/MovieDetail'
+import { RootStackParamList } from '../navigations/navigationTypes'
 
-const Stack = createNativeStackNavigator()
+const Stack = createNativeStackNavigator<RootStackParamList>()
 
 const HomeStackNavigator = (): JSX.Element => (
   <Stack.Navigator initialRouteName="Home">
